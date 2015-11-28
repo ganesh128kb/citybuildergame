@@ -1,0 +1,1 @@
+::1 - - [28/Nov/2015:10:20:26 +0000] "GET /counterParsing?countvalue=170 HTTP/1.1" 304 - "http://localhost:3000/city_management?newCity" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.86 Safari/537.36"

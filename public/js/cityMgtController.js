@@ -10,21 +10,29 @@
 		_this = this;
 
 		_oneMinInterval = 60*1000;
+		_countValue = 10;
 		//_flag = false;	
 		
 		_countSel = $(".countClass");
 		_this.initialAction = initialAction;
-		_this.getCounterResVal = getCounterResVal;			
+		_this.getCounterResVal = getCounterResVal;		
+
 	}	
 	/* ---------------------------------- PUBLIC HANDLERS ---------------------------------- */
 	function initialAction(){		
-		getCounterValue();
+		var getParam = window.location.search.replace("?", "");
+		if(getParam=="newCity"){
+			getCounterValue();			
+		}
+		else{
+			_countSel.text('0');
+		}
 	}	
 	function getCounterValue(){		
 		_jsonParseController = new jsonParseController();
 		_jsonParseController.initialAction();
 	}
-	function getCounterResVal(_counterValue){
+	function getCounterResVal(_counterValue){	
 		_countSel.text(_counterValue);
 		setInterval(countDownHandler,_oneMinInterval);
 

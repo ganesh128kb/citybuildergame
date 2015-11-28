@@ -13,14 +13,14 @@ _document.ready(documentReadyHandler);
 _window.load(windowLoadHandler);
 _window.resize(windowResizeHandler);
 
-var _domainPath = "https://citybuildergame.herokuapp.com";
+var _domainPath = "http://localhost:3000";
 /* ------------------------- EVENT HANDLERS ------------------------- */
 function documentReadyHandler(){
 	_gameMangeController = new gameMangeController();
-	_gameMangeController.initialAction();
-
+	_gameMangeController.initialAction();	
+	
 	_cityMangeController = new cityMangeController();
-	_cityMangeController.initialAction();		
+	_cityMangeController.initialAction();	
 }
 
 function windowLoadHandler(){}

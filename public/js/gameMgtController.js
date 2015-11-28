@@ -5,8 +5,7 @@
 	var _clickHandler;
 	var _listContainer;
 	var _emrClickHandler;
-	var _emrContainer;
-	
+	var _emrContainer;	
 	var _clickBlankCity;	
 	/* ---------------------------------- CONSTRUCTOR ---------------------------------- */
 	function gameMangeController(){
@@ -16,7 +15,6 @@
 		
 		_emrClickHandler = $(".emrClick");
 		_emrContainer = $(".BlankCity");		
-		
 		_this.initialAction = initialAction;		
 	}	
 	/* ---------------------------------- PUBLIC HANDLERS ---------------------------------- */
@@ -32,7 +30,7 @@
 	}
 	function onClickEmerCity(){
 		_emrClickHandler.bind(clickEvent,function(){
-			_emrContainer.fadeIn();
+			_emrContainer.fadeIn();				
 		})
 	}	
 	/* ---------------------------------- END ---------------------------------- */
