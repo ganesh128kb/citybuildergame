@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Game Management</title>
+<link rel="stylesheet" href="/public/css/style.css" type="text/css" />
+<script language="javascript" src="/public/js/jquery.js"></script>
+<script language="javascript" src="/public/js/gameMgtController.js"></script>
+<script language="javascript" src="/public/js/cityMgtController.js"></script>
+<script language="javascript" src="/public/js/jsonParseController.js"></script>
+<script language="javascript" src="/public/js/common.js"></script>
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="innerWrapper">
+    <div class="listBox">
+      <ul>
+        <li><a href="javascript:;" title="Currenlty Built"><span>&bull;</span>Currenlty Built</a></li>
+        <li><a href="javascript:;" class="bluetxt emrClick" title="Emerging City"><span>&bull;</span>Emerging City</a> <img src="/public/images/arrow.gif" width="28" class="arrImg" /></li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="curActiveCity"> <a href="#" class="portCity hrLink"><span>Port City</span>
+        <div class="portList listCont">
+          <ul>
+            <li>10000 - Population</li>
+            <li>10 - Hospitals</li>
+            <li>5 - Supermarket</li>
+          </ul>
+        </div>
+        </a> <a href="#" class="ruralCity hrLink"><span>Rural City</span>
+        <div class="ruralList listCont">
+          <ul>
+            <li>1000 - Population</li>
+            <li>3 - Hospitals</li>
+            <li>0 - Supermarket</li>
+          </ul>
+        </div>
+        </a> <a href="#" class="poorCity hrLink"><span>Poor City</span>
+        <div class="poorList listCont">
+          <ul>
+            <li>8000 - Population</li>
+            <li>2 - Hospitals</li>
+            <li>0 - Supermarket</li>
+          </ul>
+        </div>
+        </a> </div>
+      <div class="BlankCity"> <a href="city_management" class="blkCity blankCity"><span>Blank City</span> </a></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
