@@ -5,7 +5,7 @@ var fs = require('fs');
 var FileStreamRotator = require('file-stream-rotator');
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
-var port = Number(process.env.port || 3000);
+var port = Number(process.env.PORT || 3000);
 
 /*-----------End NPM--------*/
 
