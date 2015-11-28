@@ -11,7 +11,7 @@
 	}	
 	/* ---------------------------------- PUBLIC HANDLERS ---------------------------------- */
 	function initialAction(){		
-		_countQuery = 'http://localhost:3000/counterValue';
+		_countQuery = _domainPath+'/counterValue';
 			$.ajax({
 				url:_countQuery,
 				type:'GET',
@@ -27,7 +27,7 @@
 			});	
 	}
 	function counterValueParsing(_counterValue){
-		_countQuery = 'http://localhost:3000/counterParsing?countvalue='+_counterValue;
+		_countQuery = _domainPath+'/counterParsing?countvalue='+_counterValue;
 			$.ajax({
 				url:_countQuery,
 				type:'GET',
